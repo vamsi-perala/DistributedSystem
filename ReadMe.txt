@@ -10,7 +10,7 @@ Prerequisites:
 
 Responsibilities of the different classes:
 
-1) Project: This is the driver program
+1) Project1.java: This is the driver program
 2) Client: Initiates dynamic requests to neighbouring nodes of each path
 3) Server: Serves the client requests, by forwarding the requests to a helper thread, called ClientWorker
 4) ClientWorker: Called upon by the Server thread to perform computations like updating the token value and preparing the client request, reuired to contact the next neighbour in the path.
