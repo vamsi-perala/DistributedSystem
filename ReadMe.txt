@@ -8,9 +8,16 @@ Prerequisites:
 1) The project is intended to be executed on a distributed unix system. 
 2) The current project is tailored to be executed on the distributed network at The University of Texas At Dallas. Minor changes need to be incorporated in the launcher script to execute the project on another distributed system.
 
+Responsibilities of the different classes:
+
+Project: This is the driver program
+
 Client: Initiates dynamic requests to neighbouring nodes of each path
+
 Server: Serves the client requests, by forwarding the requests to a helper thread, called ClientWorker
+
 ClientWorker: Called upon by the Server thread to perform computations like updating the token value and preparing the client request, reuired to contact the next neighbour in the path.
+
 
 Instructions to execute
 1) Please unzip the contents of the project into your current directory
