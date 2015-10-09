@@ -1,7 +1,7 @@
 
 Project Description
 
- The project is intended to facilitate communication in a distributed system of 'n' nodes, using TCP/IP communication .
+ The project is intended to facilitate communication in a distributed system of 'n' nodes, using TCP/IP communication.
 Every node selects a label value (basically a random number) uniformly at random in the beginning. Every node then circulates a token through the system that visits each node in the system once and computes the sum of all the label values along the way. The path taken by the token of each node is specified in a configuration file. At the end, each node prints its label value and the sum of all the label values computed by its token.
 
 Prerequisites:
