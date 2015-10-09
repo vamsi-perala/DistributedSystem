@@ -1,14 +1,27 @@
+
+Project Description
+
+ The project is intended to facilitate communication in a distributed system of 'n' nodes, using TCP/IP communication .
+Every node selects a label value (basically a random number) uniformly at random in the beginning. Every node then circulates a token through the system that visits each node in the system once and computes the sum of all the label values along the way. The path taken by the token of each node is specified in a configuration file. At the end, each node prints its label value and the sum of all the label values computed by its token.
+
+Prerequisites:
+1) The project is intended to be executed on a distributed unix system. 
+2) The current project is tailored to be executed on the distributed network at The University of Texas At Dallas. Minor changes need to be incorporated in the launcher script to execute the project on another distributed system.
+
+Instructions to execute
 1) Please unzip the contents of the project into your current directory
 
 2) 
-a) To execute the program, please navigate to the directory containig the project files.
+a) To execute the program, please navigate to the directory containing the project files.
 and
-b) Run the 'launcher.sh' script with the config file and netId as inputs.The 'launcher.sh' compiles and executes the program.
+b) Run the 'launcher.sh' script with the config file and netId as inputs. The 'launcher.sh' compiles and executes the program.
 
 3) The output files will be created in the directory from where the script is launched.
 
 
 Note: Sometimes the JVM holds on to the output files and they do not appear in the current directory. In that case, please execute the cleanup.sh script, which frees the files from the JVM and make them appear in the current directory.
+
+
 
 
 
